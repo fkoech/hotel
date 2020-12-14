@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="hotel.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <%--bootsrapt -css--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <%--datatable -css--%>
+    <link href="datatable/css/jquery.dataTables.min.css" rel="stylesheet" />
+        <%--fontawesome -css--%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+            <%--bootstrapt -js slim--%>
+    <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+            <%--bootstrapt -js bundle--%>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+            <%--fontawesome -js--%>
+    <script src="fontawesome/js/all.js"></script>
+            <%--stylesheet -css--%>
+    <link href="Stylesheet_css/Stylesheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div>
+           <nav class="navbar navbar-expand-lg navbar-light">
+               <a class="navbar-brand" href="a" >
+                   <img src="img/afrix.jpeg" height="70" width="100" />
+                   AbiFelo Food Deliveries
+              </a>
+        <%--class navbar-goggler button make the website responsive when trying to shrink the screen  --%>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="anavbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+               <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="homepage.aspx">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">BREAK_FAST</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">LUNCH</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SUPPER</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+           </nav>
+       </div>
+        <!-- Main content Placeholder -->
+       <div>
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+           </asp:ContentPlaceHolder>
+       </div>
+        <footer>
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md-4" style="color:white;">
+                            <h4>Our Physical Location</h4>
+                               <p>you can find us</p>
+                               <p>along kimathi street</p>
+                               <p>Ndunga building second floor</p>
+
+                        </div>
+
+               
+                    <div class="col-md-4" style="color:white;">
+                        <h4>OUr Social links</h4>
+                        <p>you can follow Us on:</p>
+                        <p>twitter<img src="img/twitter.png" style="border-radius:50%; height:40px; width:40px " /></p>
+                        <p>whatsapp<img src="img/whatsapp.jpg" style="border-radius:50%; height:40px; width:40px" /></p>
+                    </div>
+                    <div class="col-md-4" style="color:white;">
+                        <h4>TALK TO US</h4>
+                         <p>CEO<img src="img/manager.jpg"style="border-radius:50%; height:90px; width:90px" /></p>
+                         <p>Managing director</p>
+                    </div>
+
+                  </div>
+            </div>
+           
+        </footer>
+    </form>
+</body>
+</html>
